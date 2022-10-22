@@ -1,0 +1,97 @@
+body {
+	background: linear-gradient(-45deg,#00ff00,#117B11, #0D630D, #0A4A0A, #073107,#031903,#000);
+	background-size: 400% 400%;
+	animation: gradient 1s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+h1 {
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px; 
+    margin-right: 0px;                
+    }
+
+h3{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px; 
+    margin-right: 0px;
+    margin-top: 38px;      
+}
+
+h2{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px; 
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 38px; 
+}
+h4{
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px; 
+    margin-right: -2px;
+    margin-left: 5px;
+    margin-top: 38px; 
+}
+
+#caixa {
+    width:400px;
+    height:250px;
+    background: black;
+    position: absolute;
+    top:16%;
+    left:35%;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+#caixa::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    background: rgb(43, 42, 42);
+    width: 90%;
+    height:4px;
+    left:5%;
+    border-radius:50%;
+    filter: blur(3px);
+}
+
+#botao{
+    background-color: transparent;
+    width: 100px;
+    height:100px;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;   
+}
+input{
+    width: 300px;
+    margin-left: 500px;
+}
+
+.valor{
+    width: 50px;
+    height: 19px;   
+}
